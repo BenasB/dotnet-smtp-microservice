@@ -16,3 +16,5 @@ Steps to develop this microservice locally:
 4. Open up MailHog's UI at [http://localhost:8001](http://localhost:8001)
 5. Open up .NET API Swagger at [https://localhost:8002/swagger](https://localhost:8002/swagger)
 6. Perform a `/send` action and see MailHog's UI!
+
+![image](https://user-images.githubusercontent.com/29711974/217379467-1121032f-bd5a-4e9a-b02d-a24b1f2a93e6.png)
