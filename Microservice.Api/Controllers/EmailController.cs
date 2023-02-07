@@ -1,3 +1,4 @@
+using Microservice.Interface;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Microservice.Api.Controllers;
@@ -13,7 +14,7 @@ public class EmailController : ControllerBase
     }
 
     [HttpPost("/send")]
-    public IActionResult Send()
+    public IActionResult Send(SendEmailRequest request)
     {
         return Ok();
     }
