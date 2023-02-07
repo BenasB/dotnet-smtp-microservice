@@ -12,6 +12,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Microservice.Interface\Microservice.Interface.csproj" />
+    <ProjectReference Include="..\Microservice.Services\Microservice.Services.csproj" />
   </ItemGroup>
 
 </Project>
