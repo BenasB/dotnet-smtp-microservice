@@ -20,4 +20,4 @@ Steps to develop this microservice locally (after cloning repo and starting Dock
 
 ## Tests
 
-Using [Testcontainers](https://github.com/testcontainers/testcontainers-dotnet) to spin up a MailHog container on demand. Running tests require Docker.
+Using [Testcontainers](https://github.com/testcontainers/testcontainers-dotnet) to spin up a MailHog container on demand. To retrieve sent messages, querying [MailHog's API](https://github.com/mailhog/MailHog/blob/master/docs/APIv2.md). Running tests require Docker.
