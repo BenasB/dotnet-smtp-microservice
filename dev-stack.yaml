@@ -1,0 +1,6 @@
+services:
+  email:
+    image: mailhog/mailhog
+    ports:
+      - 8000:1025
+      - 8001:8025
