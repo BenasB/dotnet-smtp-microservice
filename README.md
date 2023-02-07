@@ -8,11 +8,14 @@
 
 ## Local development
 
-Steps to develop this microservice locally:
+Steps to develop this microservice locally (after cloning repo and starting Docker):
 
-1. Clone the repo
-2. `docker-compose -f dev-stack.yaml` This will start MailHog (SMTP+UI)
-3. `dotnet run --project Microservice.Api` Start the .NET API
-4. Open up MailHog's UI at [http://localhost:8001](http://localhost:8001)
-5. Open up .NET API Swagger at [https://localhost:8002/swagger](https://localhost:8002/swagger)
-6. Perform a `/send` action and see MailHog's UI!
+1. `docker-compose -f dev-stack.yaml` This will start MailHog (SMTP + Web)
+2. `dotnet run --project Microservice.Api` Start the .NET API
+3. Open up MailHog's Web UI at [http://localhost:8001](http://localhost:8001)
+4. Open up .NET API Swagger at [https://localhost:8002/swagger](https://localhost:8002/swagger)
+5. Perform a `/send` action and see MailHog's Web UI!
+
+## Tests
+
+Using [Testcontainers](https://github.com/testcontainers/testcontainers-dotnet) to spin up a MailHog container on demand. Running tests require Docker.
